@@ -10,7 +10,7 @@ const view =
     let { navigation } = locale[navigator.language]
 
     return m('div#navbar.flex', [
-      m('div#brand', 'Scribe'),
+      m('a#brand', {href: '#!/'}, 'Scribe'),
       m('nav',
         m('ul', [
           m('li', m('a', {href: '#!/register'}, navigation.register)),
