@@ -48,6 +48,13 @@ var config = {
           { loader: 'json-loader' },
           { loader: 'yaml-loader' }
         ]
+      },
+      {
+        test: /\.md$/,
+        use: [
+          { loader: 'html-loader' },
+          { loader: 'markdown-loader' }
+        ]
       }
     ]
   },
