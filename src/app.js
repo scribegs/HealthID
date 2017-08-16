@@ -7,6 +7,7 @@ import 'styles/app.scss'
 
 import Layout from 'components/layout'
 import Home from 'screens/home'
+import AboutRegistration from 'screens/registration/about'
 import NotFound from 'screens/errors/not_found'
 
 // =============================================================================
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   m.route(document.body, '/', {
     '/': render(Home),
+    '/register': render(AboutRegistration),
     '/:any...': render(NotFound)
   })
 })
