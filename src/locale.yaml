@@ -2,3 +2,5 @@ en-US:
   navigation:
     register: Register Profile
     view_profile: View Profile
+  errors:
+    page_not_found: 'Page Not Found'
