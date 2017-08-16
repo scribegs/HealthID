@@ -1,4 +1,5 @@
 import m from 'mithril'
+import locale from 'locale.yaml'
 
 // ============================================================================
 // Views
@@ -6,12 +7,14 @@ import m from 'mithril'
 
 const view =
   vnode => {
+    let { navigation } = locale[navigator.language]
+
     return m('div#navbar.flex', [
       m('div#brand', 'Scribe'),
       m('nav',
         m('ul', [
-          m('li', m('a', {href: '#!/register'}, 'Register Profile')),
-          m('li', m('a', {href: '#!/view_profile'}, 'Scan Profile Card'))
+          m('li', m('a', {href: '#!/register'}, navigation.register)),
+          m('li', m('a', {href: '#!/view_profile'}, navigation.view_profile))
         ])
       )
     ])
