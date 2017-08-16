@@ -1,6 +1,4 @@
 import m from 'mithril'
-import navbar from 'components/navbar'
-import { map } from 'lodash'
 
 // ============================================================================
 // Views
@@ -8,17 +6,19 @@ import { map } from 'lodash'
 
 const view =
   vnode => {
-    return m('div#app', [
-      m(navbar),
-      map(vnode.children, child => {
-        child.attrs = vnode.attrs
-        return child
-      })
+    return m('div#navbar', [
+      m('div#brand', 'Scribe: Health Identity Portal'),
+      m('nav',
+        m('ul', [
+          m('li', m('a', {href: '#!/register'}, 'Register')),
+          m('li', m('a', {href: '#!/view_profile'}, 'Register'))
+        ])
+      )
     ])
   }
 
 // ============================================================================
-// Exports
+// Export
 // ============================================================================
 
 export default {
