@@ -1,7 +1,13 @@
 # Scribe: Personal Health Identity
 
 ## Installation
-- `yarn install`
+```bash
+$ git clone git@github.com:scribegs/HealthID.git
+$ cd HealthID
+$ yarn install
+```
 
-## Startin the Application
-- dev: `npm run dev`
+## Running the Application
+```bash
+$ npm run dev
+```
