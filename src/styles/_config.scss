@@ -1,0 +1,17 @@
+// Navbar
+$navbar-background-color: #283038;
+$navbar-link-color: #d8d9dc;
+$navbar-link-font-family: 'Open Sans', sans-serif;
+$navbar-link-font-size: 0.9em;
+$navbar-link-font-weight: 300;
+$navbar-padding: 15px 25px;
+
+// Branding
+$brand-color: $navbar-link-color;
+$brand-font-family: 'Open Sans', sans-serif;
+$brand-font-size: 1.4em;
+
+// Content container
+// TODO: Add mobile attribute
+$content-max-width: 1200px;
+$content-margins: 25px auto;

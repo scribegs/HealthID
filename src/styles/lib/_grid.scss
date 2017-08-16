@@ -1,0 +1,11 @@
+$column-count: 6 !default;
+
+.flex {
+  display: flex;
+}
+
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    flex: $i
+  }
+}

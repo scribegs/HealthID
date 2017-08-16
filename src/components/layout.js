@@ -10,10 +10,12 @@ const view =
   vnode => {
     return m('div#app', [
       m(navbar),
-      map(vnode.children, child => {
-        child.attrs = vnode.attrs
-        return child
-      })
+      m('main#content', [
+        map(vnode.children, child => {
+          child.attrs = vnode.attrs
+          return child
+        })
+      ])
     ])
   }
 

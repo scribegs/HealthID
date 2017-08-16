@@ -1,0 +1,26 @@
+// Config
+@import 'config';
+
+// Libraries
+@import 'lib/grid';
+@import 'lib/typography';
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Components
+@import 'components/navbar';
+@import 'components/layout';
+
+//Screens
+
+// Default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EDEDED;
+}

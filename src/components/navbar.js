@@ -6,12 +6,12 @@ import m from 'mithril'
 
 const view =
   vnode => {
-    return m('div#navbar', [
-      m('div#brand', 'Scribe: Health Identity Portal'),
+    return m('div#navbar.flex', [
+      m('div#brand', 'Scribe'),
       m('nav',
         m('ul', [
-          m('li', m('a', {href: '#!/register'}, 'Register')),
-          m('li', m('a', {href: '#!/view_profile'}, 'Register'))
+          m('li', m('a', {href: '#!/register'}, 'Register Profile')),
+          m('li', m('a', {href: '#!/view_profile'}, 'Scan Profile Card'))
         ])
       )
     ])
