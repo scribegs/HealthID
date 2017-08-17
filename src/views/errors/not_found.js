@@ -1,6 +1,5 @@
 import m from 'mithril'
-import navbar from 'components/navbar'
-import { map } from 'lodash'
+import i18n from 'locale.yaml'
 
 // ============================================================================
 // Views
@@ -8,16 +7,12 @@ import { map } from 'lodash'
 
 const view =
   vnode => {
-    return m('div#app', [
-      m(navbar),
-      m('main#content', [
-        map(vnode.children)
-      ])
-    ])
+    let { errors } = i18n[navigator.language]
+    return m('div', errors.page_not_found)
   }
 
 // ============================================================================
-// Exports
+// Export
 // ============================================================================
 
 export default {

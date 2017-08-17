@@ -1,6 +1,5 @@
 import m from 'mithril'
-import navbar from 'components/navbar'
-import { map } from 'lodash'
+import content from 'content/welcome.md'
 
 // ============================================================================
 // Views
@@ -8,16 +7,11 @@ import { map } from 'lodash'
 
 const view =
   vnode => {
-    return m('div#app', [
-      m(navbar),
-      m('main#content', [
-        map(vnode.children)
-      ])
-    ])
+    return m('div', m.trust(content))
   }
 
 // ============================================================================
-// Exports
+// Export
 // ============================================================================
 
 export default {

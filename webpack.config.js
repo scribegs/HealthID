@@ -1,4 +1,3 @@
-var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var path = require('path')
 
@@ -36,9 +35,24 @@ var config = {
       },
       {
         test: /\.scss$/,
-        use: [{ loader: 'style-loader' },
-              { loader: 'css-loader' },
-              { loader: 'sass-loader' }
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' }
+        ]
+      },
+      {
+        test: /\.yaml$/,
+        use: [
+          { loader: 'json-loader' },
+          { loader: 'yaml-loader' }
+        ]
+      },
+      {
+        test: /\.md$/,
+        use: [
+          { loader: 'html-loader' },
+          { loader: 'markdown-loader' }
         ]
       }
     ]

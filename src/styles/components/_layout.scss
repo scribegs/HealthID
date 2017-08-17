@@ -1,0 +1,7 @@
+$content-max-width: 1200px !default;
+$content-margins: 25px auto !default;
+
+main {
+  margin: $content-margins;
+  max-width: $content-max-width;
+}

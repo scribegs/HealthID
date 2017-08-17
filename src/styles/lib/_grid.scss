@@ -1,0 +1,19 @@
+$column-count: 6 !default;
+$gutter-size: 15px !default;
+
+.flex {
+  display: flex;
+
+  > div {
+    margin-right: $gutter-size;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@for $i from 1 through $column-count {
+  .col-#{$i} {
+    flex: $i;
+  }
+}
