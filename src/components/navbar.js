@@ -13,8 +13,15 @@ const view =
       m('a#brand', {href: '#!/'}, 'Scribe'),
       m('nav',
         m('ul', [
-          m('li', m('a', {href: '#!/register'}, navigation.register)),
-          m('li', m('a', {href: '#!/view_profile'}, navigation.view_profile))
+          m('li', m('a', {
+            href: '/register',
+            oncreate: m.route.link
+          }, navigation.register)),
+
+          m('li', m('a', {
+            href: '/view_profile',
+            oncreate: m.route.link
+          }, navigation.view_profile))
         ])
       )
     ])
