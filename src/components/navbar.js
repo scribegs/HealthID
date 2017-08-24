@@ -14,7 +14,7 @@ const view =
       m('nav',
         m('ul', [
           m('li', m('a', {
-            href: '/register',
+            href: '/registration',
             oncreate: m.route.link
           }, navigation.register)),
 

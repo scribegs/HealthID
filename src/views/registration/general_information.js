@@ -67,6 +67,12 @@ const view =
               'native Hawaiian or other pacific islander', 'white', 'other']
           })
         ])
+      ]),
+      m('div.actions', [
+        m('a.button', {
+          href: '/registration/verify',
+          oncreate: m.route.link
+        }, 'Verify and Submit')
       ])
     ])
   }
